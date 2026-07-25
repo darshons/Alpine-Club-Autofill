@@ -1,0 +1,6 @@
+title,gender,first name,last name,date of birth,telephone,email,country,postcode,address
+Mr,male,Minsu,Kim,15/03/1990,+82 10 1234 5678,minsu.kim@example.com,KR,06236,서울특별시 강남구 역삼동 123-45
+Ms,female,Jiyoung,Lee,22/07/1988,+82 10 2345 6789,jiyoung.lee@example.com,KR,13561,경기도 성남시 분당구 정자동 178-1
+Mr,male,Junho,Park,08/11/1995,+82 10 3456 7890,junho.park@example.com,KR,48058,부산광역시 해운대구 우동 1500
+Mrs,female,Seoyeon,Choi,30/01/1992,+82 10 4567 8901,seoyeon.choi@example.com,KR,04524,서울특별시 중구 명동 54-1
+Mr,male,Jihun,Jung,17/09/1985,+82 10 5678 9012,jihun.jung@example.com,KR,16419,경기도 수원시 영통구 매탄동 200

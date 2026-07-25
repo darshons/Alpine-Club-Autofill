@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Korean Address Autofill",
+  "version": "1.0.0",
+  "description": "Auto-fills the membership form from pasted rows and converts Korean addresses to romanized (Revised Romanization) English.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Korean Address Autofill"
+  },
+  "permissions": ["tabs"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.alpenverein.at/mybritannia/becomeamember/*"],
+      "js": ["korean.js", "content.js"]
+    }
+  ]
+}

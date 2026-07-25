@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { font-family: system-ui, sans-serif; width: 340px; padding: 10px; }
+    h3 { margin: 0 0 6px; font-size: 14px; }
+    label { font-size: 12px; color: #444; }
+    input, button, select, textarea { box-sizing: border-box; font-size: 13px; }
+    button { padding: 5px 10px; cursor: pointer; }
+    .row { margin-top: 6px; }
+    textarea { width: 100%; height: 70px; font-family: ui-monospace, monospace; }
+    #rows { width: 100%; margin-top: 6px; }
+    #status { margin-top: 6px; font-size: 12px; color: #555; min-height: 16px; }
+    #krOut { white-space: pre-wrap; color: #333; }
+    hr { border: none; border-top: 1px solid #ddd; margin: 12px 0; }
+    .hint { font-size: 11px; color: #888; margin: 2px 0 0; }
+  </style>
+</head>
+<body>
+  <h3>Autofill member form</h3>
+  <label for="paste">Paste rows from Excel / Google Sheets</label>
+  <textarea id="paste" placeholder="Select the header row + data rows in your sheet, copy, and paste here.
+Extra columns are ignored — it just needs Korean Name, First Name, Family Name, Gender, Date of Birth, Phone No, Email, Home Address."></textarea>
+  <p class="hint">Include the header row. Extra columns are fine — they're ignored. Or click "Use sample".</p>
+  <div class="row">
+    <button id="loadBtn">Load rows</button>
+    <button id="sampleBtn">Use sample</button>
+  </div>
+
+  <select id="rows" size="5" style="display:none"></select>
+  <div class="row">
+    <button id="fillBtn" disabled>Fill form with selected row</button>
+  </div>
+  <div id="status"></div>
+
+  <hr>
+  <p style="margin:0 0 4px; font-size:12px;">Convert a Korean address:</p>
+  <input type="text" id="krInput" placeholder="서울특별시 강남구 역삼동 123-45" style="width:100%">
+  <button id="krBtn" style="margin-top:6px;">Convert</button>
+  <div id="krOut" style="margin-top:6px; font-size:12px;"></div>
+
+  <script src="korean.js"></script>
+  <script src="csv.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
